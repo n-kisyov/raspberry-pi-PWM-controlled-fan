@@ -1,0 +1,12 @@
+[Unit]
+Description=PWM Fan Control
+After=
+
+[Service]
+Type=simple
+User=root
+ExecStart= /usr/bin/python /opt/fanctl.py
+Restart=always
+
+[Install]
+WantedBy=default.target
